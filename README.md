@@ -7,6 +7,10 @@ Base URL: https://github.com/pclarkfbl/fbl-homework
 
 One of the most important elements of many educational software systems is classroom roster management - who are the teachers, who are the students, and which classes are they all in? For most school districts, this is managed using a SIS (Student Information System). The SIS may provide an API to export roster data, or may simply export a CSV file that needs to be manually uploaded. Our application ingests this sort of data on a regular basis.
 
+### CSV structure
+The CSV files have a structure documented in the attached PDF File: [Instructions.pdf](/Instructions%20for%20Creating%20a%20SIF-Compliant%20Roster%20for%20FAST.pdf/)
+Note that the last CSV, which only contains changes, has a somewhat different structure which is described below.
+
 ## Assignment:
 The homework assignment is to write a java program to import a classroom roster file, provided via a URL, into a relational database. The database should contain at least three tables:
 
@@ -35,9 +39,6 @@ The URL for this file is:
 https://github.com/pclarkfbl/fbl-homework/raw/master/1-delta.csv
 
 Note that the URLs may result in a 302 redirect, which your program should follow.
-
-## CSV structure
-The first three CSV files have a structure documented in the attached PDF File: [Instructions.pdf](/Instructions%20for%20Creating%20a%20SIF-Compliant%20Roster%20for%20FAST.pdf/)
 
 ## Requirements:
 Your program should take the URL of a CSV file as a command-line argument, along with a flag to indicate whether this is a clean import or a delta import. It should perform the following steps:
@@ -70,7 +71,7 @@ You'll need a relational database of some sort. Please indicate which database y
 * build: You may use Apache Ant, Apache Maven, Gradle, or a shell script to build, test, and run your program.
 
 ## Deliverables
-* You should provide the source code for your application, along with any other files needed to build, test, and run the program. The program is not expected to be ready for use at scale in production, but it should be clear, easy to read, and be code that you'd be comfortable putting up for code review with a peer engineer.
+* You should provide the source code for your application, along with any other files needed to build, test, and run the program. The program is not expected to be ready for use at scale in production, but it should be clear, easy to read, easy to run, and be code that you'd be comfortable putting up for code review with a peer engineer.
 * You should provide a way to initialize the database and schema for your application, as well as to clear and reset it. This  can be done via a script, or from within the program, or any other mechanism that gets the job done.
 * You should provide a brief design document that discusses why your program looks the way it does. Please indicate if there are design directions that you considered and rejected, and why you rejected them. It should also answer the following questions:
 * * Are there any assumptions that you made in your design? What are they?
