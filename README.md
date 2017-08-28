@@ -1,9 +1,9 @@
 # FastBridge Learning Java Developer Homework Assignment
 
-Base URL: https://drive.google.com/drive/folders/0BwJlVyoiVeKGV1ZaWTUzOWh0elU?usp=sharing
+Base URL: https://github.com/pclarkfbl/fbl-homework
 
 ## Context:
-[FastBridge Learning]: https://www.fastbridge.org FastBridge provides a formative assessment product to allow teachers and other classroom staff to quickly and accurately measure student performance and growth. Students in
+[FastBridge Learning](https://www.fastbridge.org) provides a formative assessment product to allow teachers and other classroom staff to quickly and accurately measure student performance and growth. Students in
 
 One of the most important elements of many educational software systems is classroom roster management - who are the teachers, who are the students, and which classes are they all in? For most school districts, this is managed using a SIS (Student Information System). The SIS may provide an API to export roster data, or may simply export a CSV file.
 
@@ -20,23 +20,24 @@ There are 4 CSV files to work with, with the following characteristics:
 
 1.csv is a straightforward CSV file
 The URL for this file is:
-https://drive.google.com/uc?export=download&id=0BwJlVyoiVeKGb2lKSlVpWGtYczQ
+https://github.com/pclarkfbl/fbl-homework/raw/master/1.csv
 
-2.csv is a CSV file that is has larger student IDs, and exhibits a problem that is often seen when the CSV file has made a trip through Microsoft Excel.
+2.csv is a CSV file that is has larger student IDs, and exhibits a problem with long numbers that is often seen when the CSV file has made a trip through Microsoft Excel. It should be rejected by your program.
 The URL for this file is:
-https://drive.google.com/uc?export=download&id=0BwJlVyoiVeKGdTdmenBGMllTLTA
+https://github.com/pclarkfbl/fbl-homework/raw/master/2.csv
 
 3.csv is a CSV file that has characters not present in the normal ASCII character set.
-The URL for this file is: https://app.box.com/s/ouusvt2dqst2zzd29ojl4pkh91l8rem4
-https://drive.google.com/uc?export=download&id=0BwJlVyoiVeKGZlhyOFFpVXZMRlk
+The URL for this file is:
+https://github.com/pclarkfbl/fbl-homework/raw/master/3.csv
 
 1-delta.csv is a delta roster. Such rosters are often used after the initial setup when students move in, move out, or change teachers. It has a leading column titled "Action", containing either a "A" for 'Add' or a "D" for 'Delete'. Other than the addition of that column, the file has the same structure as the others. The proper handling of this roster file assumes that 1.csv has already been processed. When processing 1-delta.csv, the listed students should be either added or removed as specified in the initial column.
-The URL for this file is: https://app.box.com/s/hannh28djniey6qtxd8hist0zghuc5lp
+The URL for this file is:
+https://github.com/pclarkfbl/fbl-homework/raw/master/1-delta.csv
 
-https://drive.google.com/uc?export=download&id=0BwJlVyoiVeKGRlhTb2d1bmk4TGc
+Note that the URLs may result in a 302 redirect, which your program should follow.
 
 ## CSV structure
-The first three CSV files have a structure documented in the attached PDF File: Instructions for Creating a SIF-Compliant Roster for FAST.pdf
+The first three CSV files have a structure documented in the attached PDF File: [Instructions.pdf](/Instructions for Creating a SIF-Compliant Roster for FAST.pdf)
 
 ## Requirements:
 Your program should take the URL of a CSV file as a command-line argument, along with a flag to indicate whether this is a clean import or a delta import. It should connect to the URL, read the CSV file, insert records into the database, and then exit. If any records are malformed, the program should provide an exception log of records that it rejected.
@@ -47,7 +48,7 @@ Your program should run in a Java8 JVM. You may use any Java8 language features 
 ### Database:
 You'll need a relational database of some sort. Please indicate which database you're using. Reasonable choices include:
 
-* [JavaDB]: http://www.oracle.com/technetwork/java/javadb/overview/index.html JavaDB is a distribution of Apache Derby that's included in the Oracle JDK, and will be the most straightforward database to use.
+* [JavaDB]: http://www.oracle.com/technetwork/java/javadb/overview/index.html JavaDB is a distribution of Apache Derby that's included in the Oracle JDK, and will be the most straightforward database to use. If you're unfamiliar with it, there's a good [Getting Started with Derby document](http://db.apache.org/derby/manuals/index.html#docs_10.11).
 * [HSQLDB]: http://hsqldb.org HyperSQL is an embeddable pure-java SQL database.
 * [H2]: http://www.h2database.com/ H2 is an embeddable pure-java SQL database.
 * [Amazon RDS free tier]: https://aws.amazon.com/rds/faqs/#free-tier Amazon provides MySQL, MariaDB, and PostgreSQL instances for free
@@ -62,4 +63,8 @@ You'll need a relational database of some sort. Please indicate which database y
 * build: You may use Apache Ant, Apache Maven, Gradle, or a shell script to build, test, and run your program.
 
 ## Deliverables
-You should provide the source code for your application, along with any other files needed to build and run the program.
+You should provide the source code for your application, along with any other files needed to build, test, and run the program. The program is not expected to be ready for use at scale in production, but it should be clear, easy to read, and be code that you'd be comfortable putting up for code review with a peer engineer.
+You should provide a brief design document that discusses why your program looks the way it does. Please indicate if there are design directions that you considered and rejected, and why you rejected them. It should also answer the following questions:
+How would you change your program if it had to process roster files of over 100K records?
+How would you change your program if it had to process roster files of over 1 million records?
+

@@ -1,5 +1,6 @@
 -- create database syntax is not consistent from one vendor to another.
 -- You'll need to make sure you're using a default character encoding that supports unicode.
+-- for JavaDB, this works out of the box.
 -- for postgres, use: CREATE DATABASE rosters with encoding 'unicode';
 -- for mysql, use: CREATE DATABASE rosters CHARACTER SET utf8 COLLATE utf8;
 -- for SQL Server, you'll probably be creating the table from within the SQL Server Management Studio.
