@@ -70,6 +70,9 @@ You'll need a relational database of some sort. Please indicate which database y
 * Testing: You may include unit test libraries such as JUnit, along with a mocking framework, if desired.
 * build: You may use Apache Ant, Apache Maven, Gradle, or a shell script to build, test, and run your program.
 
+### External Resources
+Please treat this assignment as you would a work task. You may use any external resources that you care to - JDK documentation, books, stack overflow, get advice from a peer, whatever. However, you must code the assignment yourself, and you represent that the work product you submit is wholly your own output.
+
 ## Deliverables
 * You should provide the source code for your application, along with any other files needed to build, test, and run the program. The program is not expected to be ready for use at scale in production, but it should be clear, easy to read, easy to run, and be code that you'd be comfortable putting up for code review with a peer engineer.
 * You should provide a way to initialize the database and schema for your application, as well as to clear and reset it. This  can be done via a script, or from within the program, or any other mechanism that gets the job done.
