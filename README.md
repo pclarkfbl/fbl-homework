@@ -3,7 +3,7 @@
 Base URL: https://github.com/pclarkfbl/fbl-homework
 
 ## Context:
-[FastBridge Learning](https://www.fastbridge.org) provides a formative assessment product to allow teachers and other classroom staff to quickly and accurately measure student performance and growth. Students in
+[FastBridge Learning](https://www.fastbridge.org) provides a formative assessment product to allow teachers and other classroom staff to quickly and accurately measure student performance and growth.
 
 One of the most important elements of many educational software systems is classroom roster management - who are the teachers, who are the students, and which classes are they all in? For most school districts, this is managed using a SIS (Student Information System). The SIS may provide an API to export roster data, or may simply export a CSV file that needs to be manually uploaded. Our application ingests this sort of data on a regular basis.
 
