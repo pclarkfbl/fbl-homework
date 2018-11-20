@@ -65,7 +65,7 @@ You'll need a relational database of some sort. Please indicate which database y
 * [Microsoft Azure free tier](https://azure.microsoft.com/en-us/product-categories/databases) Microsoft provides access to SQL Server, MySQL, and PostgreSQL.
 
 ### Supporting Frameworks
-* JDBC: You'll probably need a JDBC library for your database of choice. Note that if you choose JavaDB, the JDBC driver is already included in the JDK.
+* JDBC: You'll probably need a JDBC library for your database of choice.
 * CSV reader: You may, if you wish, use the [Apache Commons CSV](http://commons.apache.org/proper/commons-csv/) library.
 * Testing: You may include unit test libraries such as JUnit or Spock, along with a mocking framework, if desired.
 * build: You may use Apache Ant, Apache Maven, Gradle, or a shell script to build, test, and run your program.
