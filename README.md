@@ -77,7 +77,7 @@ Please treat this assignment as you would a work task. You may use any external 
 * You should provide the source code for your application, along with any other files needed to build, test, and run the program. The program is not expected to be ready for use at scale in production, but it should be clear, easy to read, easy to run, and be code that you'd be comfortable putting up for code review with a peer engineer.
 * You should provide a way to initialize the database and schema for your application, as well as to clear and reset it. This  can be done via a script, or from within the program, or any other mechanism that gets the job done.
 * You should provide a brief design document that discusses why your program looks the way it does. Please indicate if there are design directions that you considered and rejected, and why you rejected them. It should also answer the following questions:
-* * Are there any assumptions that you made in your design? What are they?
-* * How would you change your program if it had to process roster files of over 100K records?
-* * How would you change your program if it had to process roster files of over 1 million records?
-
+  * Are there any assumptions that you made in your design? What are they?
+  * How would you change your program if it had to process roster files of over 100K records?
+  * How would you change your program if it had to process roster files of over 1 million records?
+ 
