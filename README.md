@@ -56,18 +56,18 @@ Your program should run in a Java8 JVM. You may use any Java8 language features 
 ### Database:
 You'll need a relational database of some sort. Please indicate which database you're using. Reasonable choices include:
 
-* [JavaDB](http://www.oracle.com/technetwork/java/javadb/overview/index.html) JavaDB is a distribution of Apache Derby that's included in the Oracle JDK, and will be the most straightforward database to use. If you're unfamiliar with it, there's a good [Getting Started with Derby document](http://db.apache.org/derby/manuals/index.html#docs_10.11).
+* [Derby](http://db.apache.org/derby) Derby is a pure-java relational database. Prior to JDK 8u181, Derby was bundled with the JDK as "JavaDB". This will likely be the most straightforward database to use. If you're unfamiliar with it, there's a good [Getting Started with Derby document](http://db.apache.org/derby/manuals/index.html#docs_10.11).
 * [HSQLDB](http://hsqldb.org) HyperSQL is an embeddable pure-java SQL database.
 * [H2](http://www.h2database.com/) H2 is an embeddable pure-java SQL database.
 * [PostgreSQL](https://www.postgresql.org) PostgreSQL is an open-source, free SQL database.
 * [MySQL](https://dev.mysql.com) MySQL Community Edition is an open-source, free SQL database.
 * [Amazon RDS free tier](https://aws.amazon.com/rds/faqs/#free-tier) Amazon provides SQL Server, MySQL, MariaDB, and PostgreSQL instances for free
-* [Microsoft Azure free tier](https://azure.microsoft.com/en-us/services/mysql/) Microsoft provides access to SQL Server, MySQL, and PostgreSQL in developer preview
+* [Microsoft Azure free tier](https://azure.microsoft.com/en-us/product-categories/databases) Microsoft provides access to SQL Server, MySQL, and PostgreSQL.
 
 ### Supporting Frameworks
 * JDBC: You'll probably need a JDBC library for your database of choice. Note that if you choose JavaDB, the JDBC driver is already included in the JDK.
 * CSV reader: You may, if you wish, use the [Apache Commons CSV](http://commons.apache.org/proper/commons-csv/) library.
-* Testing: You may include unit test libraries such as JUnit, along with a mocking framework, if desired.
+* Testing: You may include unit test libraries such as JUnit or Spock, along with a mocking framework, if desired.
 * build: You may use Apache Ant, Apache Maven, Gradle, or a shell script to build, test, and run your program.
 
 ### External Resources
